@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photoframe</title>
+    <style>
+      .photo-frame {
+        width: 300px;
+        height: 200px;
+        border: 10px solid grey;
+        border-radius: 10px;
+        position: relative;
+      }
+      .photo-frame .photo img {
+        width: 100%;
+        height: 200px;
+      }
+      .photo-detail {
+        display: none;
+        position: absolute;
+        width: 300px;
+        height: 430px;
+        top: 0px;
+      }
+      .photo-frame:hover .photo-detail{
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photo Album</h1>
+    <section class="photo-album">
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="images/tiger.jpg" alt="Tiger Mama" />
+        </div>
+        <div class="photo-detail">
+          <h3>Royal Bengal Tiger</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+            commodi distinctio! Recusandae culpa dolores incidunt hic dicta eos
+            libero commodi est, nemo cupiditate expedita.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
